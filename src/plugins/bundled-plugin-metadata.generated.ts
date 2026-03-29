@@ -3924,6 +3924,45 @@ export const GENERATED_BUNDLED_PLUGIN_METADATA = [
     },
   },
   {
+    dirName: "wecom-openclaw-plugin",
+    idHint: "wecom-openclaw-plugin",
+    source: {
+      source: "./index.ts",
+      built: "index.js",
+    },
+    packageName: "@wecom/wecom-openclaw-plugin",
+    packageVersion: "2026.3.25",
+    packageDescription: "OpenClaw WeCom (企业微信) channel plugin (official by Tencent WeCom team)",
+    packageManifest: {
+      extensions: ["./index.ts"],
+      channel: {
+        id: "wecom",
+        label: "企业微信",
+        selectionLabel: "企业微信 (WeCom)",
+        docsPath: "/channels/wecom",
+        docsLabel: "wecom-openclaw-plugin",
+        blurb: "企业微信机器人接入插件",
+        order: 80,
+        quickstartAllowFrom: true,
+      },
+      install: {
+        npmSpec: "@wecom/wecom-openclaw-plugin",
+        localPath: "extensions/wecom-openclaw-plugin",
+        defaultChoice: "npm",
+      },
+    },
+    manifest: {
+      id: "wecom-openclaw-plugin",
+      configSchema: {
+        type: "object",
+        additionalProperties: false,
+        properties: {},
+      },
+      channels: ["wecom"],
+      skills: ["./skills"],
+    },
+  },
+  {
     dirName: "whatsapp",
     idHint: "whatsapp",
     source: {

@@ -17,6 +17,7 @@ import { synologyChatPlugin } from "../../../extensions/synology-chat/index.js";
 import { telegramPlugin, setTelegramRuntime } from "../../../extensions/telegram/index.js";
 import { telegramSetupPlugin } from "../../../extensions/telegram/setup-entry.js";
 import { zaloPlugin } from "../../../extensions/zalo/index.js";
+import { wecomPlugin } from "../../../extensions/wecom-openclaw-plugin/index.js";
 import type { ChannelId, ChannelPlugin } from "./types.js";
 
 export const bundledChannelPlugins = [
@@ -32,6 +33,7 @@ export const bundledChannelPlugins = [
   slackPlugin,
   synologyChatPlugin,
   telegramPlugin,
+  wecomPlugin,
   zaloPlugin,
 ] as ChannelPlugin[];
 
